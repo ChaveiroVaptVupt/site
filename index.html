@@ -126,11 +126,11 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
             var contatosNoite = document.querySelectorAll('.noite');
 
             contatosDia.forEach(function(div) {
-                div.style.display = (horas >= 9 && horas < 18) ? 'block' : 'none';
+                div.style.display = (horas >= 9 && horas < 22) ? 'block' : 'none';
             });
 
             contatosNoite.forEach(function(div) {
-                div.style.display = (horas >= 18 || horas < 9) ? 'block' : 'none';
+                div.style.display = (horas >= 22 || horas < 9) ? 'block' : 'none';
             });
         }
 
