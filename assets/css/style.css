@@ -1,0 +1,42 @@
+body{font-family: 'montserrat'; margin: 0 !important}
+h2 {font-size: 30px; color: #fff}
+p {font-size: 19px; margin-bottom: 30px;}
+img {max-width: 100%;}
+.conteudo {display: flex; align-items: center; justify-content: center; padding: 80px 0;}
+.conteudo .linha {max-width: 1240px; width: 80%;}
+.conteudo.banner {background-color: #1c3872;}
+.conteudo.banner .linha {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.conteudo.servicos {background-color: #f4f4f4;}
+.conteudo.rodape {background-color: #132751;}
+.conteudo.banner h1, .conteudo.banner h2, .conteudo.banner p {color: #fff; text-align: center;}
+.conteudo.banner img {max-width: 200px;}
+.conteudo.plantao {text-align: center;}
+.conteudo .linha .local {width: 32%; display: inline-block; text-align: center; margin-bottom: 160px;}
+.conteudo .linha .local .titulo {margin-top: -220px; font-size: 25px; color: #fff;}
+.conteudo .linha .coluna {width: 31%; margin: 0 1%; display: inline-block; text-align: center; background-color: #fff; border-radius: 10px; overflow: hidden; padding-bottom: 30px; margin-bottom: 40px;}
+.conteudo .linha .coluna .titulo {color: #1c3872; font-size: 20px;}
+.conteudo .linha .detalhes {text-align: center; text-transform: uppercase; font-size: 30px; padding: 30px 0; color: #1c3872; position: relative;}
+.conteudo .linha .detalhes::before {content:""; width: 10%; height: 8px; position: absolute; left: 45%; top: 0; background-color: #f7cf21;}
+.conteudo .linha .imagem {text-align: center;}
+.conteudo.rodape p {color: #fff;}
+.conteudo .linha .contatos .botao a {color: #fff; text-decoration: none !important; background-color: #25D366; padding: 10px 40px; display: block; width: 250px; border-radius: 5px; font-size: 20px; text-align: center; transition: ease-in-out .4s; margin-bottom: 25px;}
+.conteudo .linha .contatos .botao.phone a {background-color: #006AFF !important;}
+.conteudo .linha .contatos .botao a > img {width: 20px;}
+
+
+
+
+
+@media only screen and (min-width: 981px){
+    .conteudo .linha .local {margin-left: 0.5%; margin-right: 0.5%;}
+    .conteudo .linha .imagem {width: 40%; display: inline-block;}
+    .conteudo .linha .texto {width: 59%; display: inline-block;}
+    .conteudo.rodape .linha {display: flex; align-items: center;}
+    .conteudo .linha .contatos .botao {display: inline-block; margin: 0 10px;}
+}
+
+@media only screen and (max-width: 768px){
+    .conteudo .linha .local {width: 90% !important; margin-left: 5%;}
+    .conteudo .linha .local .titulo {margin-top: -190px !important;}
+    .conteudo .linha .coluna {width: 100% !important;}
+}
